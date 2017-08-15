@@ -32,7 +32,7 @@ import java.util.List;
 
 @Configuration
 @EnableConfigurationProperties(WechatProperties.class)
-@ConditionalOnProperty(prefix = "shop.wechat", name = { "payment-host", "mch-id", "payment-app-id", "payment-key" })
+@ConditionalOnProperty(prefix = "shop.wechat", name = { "payment-host", "mirco-program-mch-id", "mirco-app-id", "mirco-payment-key" })
 public class WechatPaymentAutoConfiguration {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(WechatPaymentAutoConfiguration.class);
