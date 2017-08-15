@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-so.sao.wechat.mini.pay.config.WxPayAutoConfiguration
+so.sao.wechat.mini.pay.config.WechatPaymentAutoConfiguration
