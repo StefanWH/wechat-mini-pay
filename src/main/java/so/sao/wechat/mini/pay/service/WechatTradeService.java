@@ -169,6 +169,7 @@ public class WechatTradeService {
             String jsonStr = EntityUtils.toString(response.getEntity(), "UTF-8");
             return wechatPaymentXmlMapper.fromJson(jsonStr,RefundResponse.class);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new ShopRuntimeException("发起退款失败");
         }
 
